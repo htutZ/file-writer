@@ -1,3 +1,9 @@
 export interface FileWriterPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  createDocument(options: FileWriterOptions): Promise<{ uri: string }>;
+  writeToFile(): Promise<void>;
+}
+
+export interface FileWriterOptions {
+  fileName: string;
+  fileContent: string;
 }

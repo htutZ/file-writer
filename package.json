@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/htutZ/file-writer.git.git"
+    "url": "git+https://github.com/htutZ/file-writer.git"
   },
   "bugs": {
     "url": "https://github.com/htutZ/file-writer.git/issues"
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@capacitor/android": "^5.0.0",
-    "@capacitor/core": "^5.0.0",
+    "@capacitor/core": "^5.0.5",
     "@capacitor/docgen": "^0.0.18",
     "@capacitor/ios": "^5.0.0",
     "@ionic/eslint-config": "^0.3.0",
@@ -72,7 +72,9 @@
       "src": "ios"
     },
     "android": {
-      "src": "android"
+      "path": "android",
+      "package": "com.htut.filewriter",
+      "sourceDir": "src/main/java"
     }
-  }
+  }  
 }
